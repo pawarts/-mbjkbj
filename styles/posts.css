@@ -1,0 +1,79 @@
+
+.posts_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.post_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post_item{
+    display: inline-block;
+    width: 80vw;
+    text-align: left;
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+.post_item .post_title{
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.post_item .post_text {
+    margin: 30px 0;
+    text-align: justify;
+    text-wrap: normal;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.post_item .view_text {
+    overflow: visible;
+    white-space: normal;
+}
+
+.post_item .post_info{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.comment_wrap{
+    width: 80vw;
+    /*border: 1px solid #000;*/
+    margin:25px 0 15px 0;
+}
+
+.comment_wrap .comment_text{
+    text-align: left;
+}
+
+
+.delete_edite-btn{
+    color: black;
+}
+
+.post_item .header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 15px;
+}
+
+.post_item .header_wrap .btn_wrap .delete_edite-btn{
+    margin-right: 5px;
+}
+
+.post_item .header_wrap .post_title{
+    font-size: 30px;
+    font-weight: 600;
+}

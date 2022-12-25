@@ -1,0 +1,44 @@
+.nav_block{
+    display: flex;
+    padding: 0 10px 0 45px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0px 10px rgba(0,0,0,0.1);
+}
+
+.nav_block .logo{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000000;
+}
+
+.nav_block .link_wrap{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.nav_block .link_wrap .list_link .link_item{
+    color: black;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.nav_block .log-wrap{
+}
+
+.nav_block .link_wrap .list_link .login-reg_wrap{
+    background: #2970ff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 0;
+}
+
+.delete_edite-btn{
+
+}
+
+.circle{
+    border-radius: 50%;
+}

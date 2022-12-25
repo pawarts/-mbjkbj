@@ -1,0 +1,38 @@
+<%- include('./parts/header.ejs')%>
+<body>
+    <div class="wrapper">
+        <%- include("./parts/nav.ejs")%>
+        <div class="post_wrap">
+            <div class="posts_wrap">
+                <% result.forEach((element) => {%>
+                    <div class="post_item">
+                        <div class="header_wrap">
+                            <p class="post_title"><%- element.title%></p>
+                            <% if(element.author == login){%>
+                                <div class="btn_wrap">
+                                    <a href="/delete/<%- element.id %>" class="delete_edite-btn">Видалити</a>
+                                    <a href="/edite/<%- element.id %>" class="delete_edite-btn">Редагувати</a>
+                                </div>
+                            <%}%>
+                        </div>
+                        <p class="post_text view_text">
+                            <%- element.text%>
+                        </p>
+                        <div class="post_info">
+                            <p class="post_author"><%- element.author%></p>
+                            <p class="post_date"><%- element.date%></p>
+                        </div>
+                    </div>
+                <% });%>
+            </div>
+            <div class="comment_wrap">
+                <%if(- login != '' ){%>
+                    <p class="comment_text">Ви можете додати коментарі.</p>
+                <%} else{%>
+                    <p class="comment_text">Писати коментарі можуть, лише зареєстровані користувачі.</p>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

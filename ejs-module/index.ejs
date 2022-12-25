@@ -1,0 +1,17 @@
+<%- include('./parts/header.ejs')%>
+<body>
+    <div class="wrapper wrap">
+        <%- include("./parts/nav.ejs")%>
+        <%if(- login != '' ){%>
+            <div class="welcome">
+                <h1 class="main_title">Вітаю на моєму сайті,</h1>
+                <h2><%- login %>!</h2>
+            </div>
+        <%} else{%>
+            <div class="welcome">
+                <h1 class="main_title">Вітаю на сайті!</h1>
+            </div>
+        <%}%>
+    </div>
+</body>
+</html>

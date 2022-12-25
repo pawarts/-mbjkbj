@@ -1,0 +1,87 @@
+.form_wrap{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.form_wrap .input_wrap{
+    display: inline-block;
+}
+
+.form_wrap .input_wrap .input_form{
+    width: calc(350px / 1.5);
+    height: calc(23px / 1.5);
+    border: 3px solid #000000;
+    border-radius: 3px;
+    padding: 6px 10px;
+    margin-top: 25%;
+    margin-bottom: 10px;
+}
+
+.form_wrap .text_form{
+    resize: none;
+    border: 3px solid #000000;
+    border-radius: 3px;
+    height: 250px;
+    padding: 5px;
+}
+
+.form_wrap .btn_sub {
+    padding: 6px 10px;
+    margin-top: 10px;
+    border: 3px solid #000000;
+    cursor: pointer;
+    background: none;
+}
+
+
+.wrappers{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.form_wraps{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.form_wraps .input_wrap .input_form{
+    display: inline-block;
+    width: 350px;
+    height: 17px;
+    border: 3px solid #000000;
+    border-radius: 3px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+}
+
+.form_wraps .text_form{
+    resize: none;
+    width: 350px;
+    height: 340px;
+    border: 3px solid #000000;
+    padding: 10px;
+}
+
+.form_wraps .btn_sub{
+    padding: 6px 10px;
+    margin-top: 10px;
+    border: 3px solid #000000;
+    cursor: pointer;
+    background: none;
+}
+
+.form_wraps .btn_wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_wraps .btn_wrap .btn_back{
+    border: none;
+    color: #000000;
+    font-size: 15px;
+}

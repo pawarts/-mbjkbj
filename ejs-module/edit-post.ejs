@@ -1,0 +1,21 @@
+<%- include('./parts/header.ejs')%>
+<body>
+    <div class="wrapper">
+        <%- include("./parts/nav.ejs")%>
+        <%result.forEach(element => {%>
+            <div class="wrappers">
+                <form action="" method="post" class="form_wraps">
+                    <div class="input_wrap">
+                        <input type="text" class="input_form" name = "title" placeholder="Заголовок" value="<%- element.title%>">
+                    </div>
+                    <textarea name="text" id="" cols="60" rows="100" class="text_form"><%- element.text%></textarea>
+                    <div class="btn_wrap">
+                        <a href="/post/<%- id%>" class="btn_sub btn_back">Назад</a>
+                        <button class="btn_sub">Підтвердити</button>
+                    </div>
+                </form>
+            </div>
+        <%})%>
+    </div>
+</body>
+</html>

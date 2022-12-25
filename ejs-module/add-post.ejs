@@ -1,0 +1,18 @@
+<%- include("./parts/header.ejs")%>
+
+<body>
+    <div class="wrapper">
+        <%- include("./parts/nav.ejs")%>
+
+            <form action="" method="post" class="form_wrap">
+                <div class="input_wrap">
+                    <input type="text" class="input_form" name = "title" placeholder="Заголовок">
+                    <input type="text" class="input_form" name = "author" placeholder="Автор">
+                </div>
+                <textarea name="text" id="" cols="60" rows="100" class="text_form"></textarea>
+                <button class="btn_sub">Опублікувати</button>
+            </form>
+
+    </div>
+</body>
+</html>

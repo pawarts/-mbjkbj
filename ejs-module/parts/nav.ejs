@@ -1,0 +1,20 @@
+<nav class="nav_block">
+    <p class="logo" id="logo"></p>
+    <ul class="link_wrap">
+        <li class="list_link"><a href="/" class="link_item">Головна</a></li>
+        <li class="list_link"><a href="/posts" class="link_item">Пости</a></li>
+        <li class="list_link"><a href="/add-post" class="link_item">Написати</a></li>
+    </ul>
+    <ul class="link_wrap log-wrap">
+        <%if (login == ''){%>
+            <li class="list_link"><a href="/log" class="link_item">Увійти</a></li>
+            <li class="list_link"><a href="/reg" class="link_item login-reg_wrap">Зареєструватись</a></li>
+        <%}else{%>
+            <li class="list_link"><a href="/exit" class="link_item">Вийти</a></li>
+        <%}%>
+    </ul>
+</nav>
+
+<%=let logo = document.getElementById('logo')%>
+
+ <%=logo.addEventListener('click', () => logo.classList.toggle('circle'))%>>
