@@ -29,7 +29,7 @@ const createPath = (page) => path.resolve(__dirname, 'ejs-module', `${page}.ejs`
 
 
 //Server launcher
-app.listen(process.env.PORT || PORT, (error) => {
+app.listen(PORT, (error) => {
     error ? console.log(Error " + error) : console.log("i'm listen port: " + PORT);
 })
 
