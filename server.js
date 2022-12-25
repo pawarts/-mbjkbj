@@ -30,7 +30,7 @@ const createPath = (page) => path.resolve(__dirname, 'ejs-module', `${page}.ejs`
 
 //Server launcher
 app.listen(process.env.PORT || PORT, (error) => {
-    error ? console.log(error) : console.log("i'm listen port: " + PORT);
+    process.env.PORT ? console.log("i'm listen port: " + process.env.PORT) : console.log("i'm listen port: " + PORT);
 })
 
 //Middleware components
